@@ -1,0 +1,15 @@
+%h2 検索条件
+
+= form_for :index, :id => 'search_hotels', :method => 'get' do |f|
+
+  .field
+    = f.label '到着日'
+    = f.text_field :arrivalDate
+  .field
+    = f.label '出発日'
+    = f.text_field :departureDate
+  .field
+    = f.label '地域'
+    = f.text_field :city
+  .action
+    = f.submit '検索', :class => 'btn primary'
