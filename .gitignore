@@ -3,5 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
-config/ean3_config.yml
+config/ean_config.yml
 
