@@ -1,6 +1,7 @@
 %h2 検索条件
 
-= form_for :index, :id => 'search_hotels', :method => 'get' do |f|
+= form_for :index, :method => 'get', :url => search_hotels_path, :remote => true do |f|
+
 
   .field
     = f.label '到着日'
@@ -12,4 +13,4 @@
     = f.label '地域'
     = f.text_field :city
   .action
-    = f.submit '検索', :class => 'btn primary'
+    = f.submit '検索', :id => 'search_hotel_btn', :class => 'btn primary'
