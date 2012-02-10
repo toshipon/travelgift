@@ -1,19 +1,19 @@
-  - if @response && @response.HotelListResopnse
-    %h2 ホテル一覧
+- if @response && @response.HotelListResopnse
+  %h2 ホテル一覧
 
-    %ul
-      - for hotel in @response.HotelListResponse.HotelList.HotelSummary
-        %li
-          %p
-            = hotel.name
-          %p
-            = hotel.address1
-          %p
-            hotel rating
-          %span
-            = hotel.hotelRating
-          %p
-            low rate
-          %span
-            = hotel.lowRate
+  %ul
+    - for hotel in @response.HotelListResponse.HotelList.HotelSummary
+      %li
+        %p
+          = hotel.name
+        %p
+          = hotel.address1
+        %p
+          hotel rating
+        %span
+          = hotel.hotelRating
+        %p
+          low rate
+        %span
+          = hotel.lowRate
 

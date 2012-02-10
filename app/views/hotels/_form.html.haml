@@ -1,7 +1,6 @@
 %h2 検索条件
 
-= form_for :index, :method => 'get', :url => search_hotels_path, :remote => true do |f|
-
+= form_for @hotel, :method => 'get', :url => search_hotels_path, :remote => true do |f|
 
   .field
     = f.label '到着日'
